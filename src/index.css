@@ -2,34 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #020617;
-}
-
-body {
-  background-color: var(--background);
-  color: white;
-  font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient-button {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-  transition: all 0.3s ease;
-}
-
-.gradient-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px -10px rgba(79, 70, 229, 0.5);
-}
+:root { --background: #020617; }
+body { background-color: var(--background); color: white; font-family: sans-serif; margin: 0; padding: 0; }
+.glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+.gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.gradient-button { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); transition: all 0.3s ease; border: none; cursor: pointer; }
